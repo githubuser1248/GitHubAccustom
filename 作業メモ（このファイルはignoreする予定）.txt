@@ -1,0 +1,19 @@
+
+2021/04/13
+・なんかエラー出た。
+
+"git -c diff.mnemonicprefix=false -c core.quotepath=false --no-optional-locks push -v --tags origin master:master
+remote: Permission to githubuser1248/GitHubAccustom.git denied to JNSY.
+fatal: unable to access 'https://github.com/githubuser1248/GitHubAccustom.git/': The requested URL returned error: 403
+
+Pushing to https://github.com/githubuser1248/GitHubAccustom.git
+エラー終了しました。エラーの内容は上記をご覧ください。"
+
+恐らく、ソースツリーのアカウント？だと、今GitHubでログインしているアカウントへのリポジトリに変更を加える許可が出ていないのだと思う。
+ググればすぐ出てくると思うから、まずこれを解決しよう。
+
+↑
+new tab→リモート→アカウントの編集
+で追加できる…わかりづら。。
+それを開いたら、下のページ参考にすればソースツリーからGitHubアクセスできるべ
+https://note.com/yubune_log/n/n6bc8d414c588
